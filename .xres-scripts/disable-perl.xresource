@@ -1,0 +1,4 @@
+! Disable perl
+
+URxvt.perl-ext:
+URxvt.perl-ext-common:

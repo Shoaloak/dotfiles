@@ -1,0 +1,17 @@
+#include "solarized.xresource"
+#include "perl-extensions.xresource"
+!#include "disable-perl.xresource"
+
+URxvt.transparent:          true
+URxvt.shading:              25
+URxvt.scrollBar:            false
+
+! Scroll in relation to buffer (with mouse scroll of Shift+Page up)
+URxvt.scrollWithBuffer:     true
+! Scrollback buffer in secondary screen
+URxvt.secondaryScreen:      1
+URxvt.secondaryScroll:      0
+
+URxvt*font:                 xft:Inconsolata:size=10
+!URxvt*font:               xft:DejaVu Sans Mono:size=10
+Xft*dpi:                    96
