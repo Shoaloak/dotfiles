@@ -1,4 +1,5 @@
 " Shoaloak's Vimrc
+" place cursor on word, type :h <C-r><C-w> to look up
 "------------------------------------------------------------------------------"
 " Disable compatibilty with vi
 set nocompatible
@@ -44,5 +45,26 @@ set wildmode=longest,list
 cnoremap <C-p> <Up>
 cnoremap <C-n> <Down>
 
+" Mappings for list traversing
+nnoremap <silent> [b :bprevious <CR>
+nnoremap <silent> ]b :bnext <CR>
+nnoremap <silent> [B :bfirst <CR>
+nnoremap <silent> ]B :blast <CR>
+
+" Easy active file dir expansion
+cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
+
 " Up the memory of ex commands
 set history=200
+
+" Enable mouse support
+set mouse=a
+
+" BULLSHIT
+nnoremap <Up> <Nop>
+nnoremap <Down> <Nop>
+nnoremap <Left> <Nop>
+nnoremap <Right> <Nop>
+
+" plugins
+runtime macros/matchit.vim

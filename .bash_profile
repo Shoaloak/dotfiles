@@ -10,5 +10,7 @@ PANEL_HEIGHT=24
 PANEL_FONT_FAMILY="-*-terminus-medium-r-normal-*-12-*-*-*-c-*-*-1"
 export PANEL_FIFO PANEL_HEIGHT PANEL_FONT_FAMILY
 
+export EDITOR=vim
+
 # Start Xorg
 [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx

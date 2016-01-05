@@ -2,6 +2,6 @@
 
 ! Clickable urls
 URxvt.perl-ext-common:      default,matcher
-!Urxvt.url-launcher:         /usr/bin/firefox
+Urxvt.url-launcher:         /usr/bin/chromium
 URxvt.matcher.button:       1
 URxvt.matcher.rend.0:       Uline Bold fg5
