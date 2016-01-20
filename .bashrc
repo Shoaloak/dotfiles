@@ -5,11 +5,14 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-# Source bash colors
-source ~/.bash_colors
+# Color definitions
+if [ -f ~/.bash_colors ]; then
+    . ~/.bash_colors
+fi
 
-# User specific aliases
-alias ls='ls -h --color=auto'
-alias ll='ls -latr'
+# Alias definitions
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
 
 PS1="\[${Green}\]\u\[${Color_Off}\] \[${Blue}\]\w\[${Color_Off}\] \[${Green}\]\\$ \[${Color_Off}\]"
