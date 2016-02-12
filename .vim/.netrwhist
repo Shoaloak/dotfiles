@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/shoaloak/Projects/practical-vim-code/the_vim_way'
+let g:netrw_dirhist_2='/srv/minecraft'
+let g:netrw_dirhist_3='/srv/minecraft/logs'
+let g:netrw_dirhist_4='/home/shoaloak/Projects/practical-vim-code/files/mvc'
