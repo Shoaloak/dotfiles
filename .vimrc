@@ -15,7 +15,7 @@ let &colorcolumn=join(range(81,999),",")
 
 execute pathogen#infect()
 set background=dark "(dark | light)"
-colorscheme solarized
+colorscheme monokai
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -68,3 +68,28 @@ nnoremap <Right> <Nop>
 
 " plugins
 runtime macros/matchit.vim
+
+
+
+" Radj zijn sheit
+" set number
+" set vb
+" syntax on
+" set nobackup
+" set wrap
+"
+" set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\
+" [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
+" set laststatus=2
+" colorscheme zellner
+"
+" set ignorecase
+" set smartcase
+" set hlsearch
+" set incsearch
+" set magic
+" set showmatch
+" set mat=2
+"
+" au Filetype python set makeprg=python\ %
+" au Filetype sh set makeprg=source\ %
