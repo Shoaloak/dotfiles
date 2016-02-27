@@ -15,4 +15,7 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+# Bash options
+set -o vi
+
 PS1="\[${Green}\]\u\[${Color_Off}\] \[${Blue}\]\w\[${Color_Off}\] \[${Green}\]\\$ \[${Color_Off}\]"
