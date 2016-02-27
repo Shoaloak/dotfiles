@@ -4,7 +4,9 @@
 " Disable compatibilty with vi
 set nocompatible
 " Enable filetype detection and plugins for files
-filetype plugin on
+"filetype plugin on
+" Python fix
+filetype indent plugin on
 
 " Enable syntax, without overriding with default values (on)
 syntax enable
@@ -72,24 +74,20 @@ runtime macros/matchit.vim
 
 
 " Radj zijn sheit
-" set number
 " set vb
-" syntax on
-" set nobackup
-" set wrap
+set nobackup
 "
-" set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\
-" [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
-" set laststatus=2
+set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
+set laststatus=2
 " colorscheme zellner
 "
-" set ignorecase
 " set smartcase
-" set hlsearch
-" set incsearch
 " set magic
 " set showmatch
 " set mat=2
 "
 " au Filetype python set makeprg=python\ %
 " au Filetype sh set makeprg=source\ %
+
+" No moar intro
+set shortmess=I
