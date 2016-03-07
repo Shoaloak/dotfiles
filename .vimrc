@@ -3,10 +3,8 @@
 "------------------------------------------------------------------------------"
 " Disable compatibilty with vi
 set nocompatible
-" Enable filetype detection and plugins for files
-"filetype plugin on
-" Python fix
-filetype indent plugin on
+" Enable filetype detection based on file, also read plugin and indent files
+filetype plugin indent on
 
 " Enable syntax, without overriding with default values (on)
 syntax enable
@@ -62,7 +60,7 @@ set history=200
 " Enable mouse support
 set mouse=a
 
-" BULLSHIT
+" Disable arrow keys
 nnoremap <Up> <Nop>
 nnoremap <Down> <Nop>
 nnoremap <Left> <Nop>
@@ -71,6 +69,10 @@ nnoremap <Right> <Nop>
 " plugins
 runtime macros/matchit.vim
 
+"set hidden
+"if has("autocmd")
+    "autocmd FileType ruby setlocal ts=2 sts=2 sw=2 expandtab
+"endif
 
 
 " Radj zijn sheit
@@ -88,6 +90,7 @@ set laststatus=2
 "
 " au Filetype python set makeprg=python\ %
 " au Filetype sh set makeprg=source\ %
+"  END 
 
 " No moar intro
 set shortmess=I
