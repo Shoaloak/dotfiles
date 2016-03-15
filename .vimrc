@@ -21,6 +21,8 @@ colorscheme monokai
 
 " Do not make a distiction between case
 set ignorecase
+" Unless the search contains captital letters
+set smartcase
 " highlight search pattern(s)
 set hlsearch
 " show search pattern during search
@@ -69,10 +71,11 @@ nnoremap <Right> <Nop>
 " plugins
 runtime macros/matchit.vim
 
-"set hidden
-"if has("autocmd")
-    "autocmd FileType ruby setlocal ts=2 sts=2 sw=2 expandtab
-"endif
+" clear highlight with <C-l>
+nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
+
+" show number of matches
+"nnoremap :%s///gn
 
 
 " Radj zijn sheit
@@ -84,7 +87,6 @@ set laststatus=2
 " colorscheme zellner
 "
 " set smartcase
-" set magic
 " set showmatch
 " set mat=2
 "
