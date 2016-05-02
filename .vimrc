@@ -77,6 +77,13 @@ nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 " show number of matches
 "nnoremap :%s///gn
 
+" fix the :&
+nnoremap & :&&<CR>
+xnoremap & :&&<CR>
+
+" build ctags
+nnoremap <f5> :!ctags -R<CR>
+
 
 " Radj zijn sheit
 " set vb
@@ -90,8 +97,8 @@ set laststatus=2
 " set showmatch
 " set mat=2
 "
-" au Filetype python set makeprg=python\ %
-" au Filetype sh set makeprg=source\ %
+au Filetype python set makeprg=python\ %
+au Filetype sh set makeprg=source\ %
 "  END 
 
 " No moar intro
