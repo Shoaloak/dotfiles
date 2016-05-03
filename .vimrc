@@ -84,6 +84,8 @@ xnoremap & :&&<CR>
 " build ctags
 nnoremap <f5> :!ctags -R<CR>
 
+" infercase??
+set infercase
 
 " Radj zijn sheit
 " set vb
