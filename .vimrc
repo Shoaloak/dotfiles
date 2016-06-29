@@ -9,13 +9,13 @@
 "
 " Index:
 "       -> General
+"       -> Plugins
 "       -> Appearance
 "       -> Text, tab and indent related
 "       -> Searching
 "       -> status line and ex
 "       -> Miscellaneous
 "       -> Mappings
-"       -> Plugins
 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -37,6 +37,27 @@ set mouse=a
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Plugins
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plug section
+call plug#begin('~/.vim/plugged')
+
+" Make single quotes are used.
+
+Plug 'scrooloose/nerdtree'
+Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'tpope/vim-surround'
+Plug 'nelstrom/vim-visual-star-search'
+
+Plug 'altercation/vim-colors-solarized'
+Plug 'nanotech/jellybeans.vim'
+
+" Add plugins to &runtimepath
+call plug#end()
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Appearance and interface
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Enable syntax, without overriding with default values (on)
@@ -49,8 +70,8 @@ set number
 let &colorcolumn=join(range(81,999),",")
 
 "set background=dark "(dark | light)"
-"colorscheme solarized
-colorscheme desert
+colorscheme solarized
+"colorscheme desert
 
 " No intro
 set shortmess=I
@@ -172,23 +193,3 @@ runtime macros/matchit.vim
 " fix the :&
 nnoremap & :&&<CR>
 xnoremap & :&&<CR>
-
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Plugins
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" vim-plug section
-call plug#begin('~/.vim/plugged')
-
-" Make sure you use single quotes
-
-Plug 'scrooloose/nerdtree'
-Plug 'bling/vim-airline'
-Plug 'tpope/vim-surround'
-Plug 'nelstrom/vim-visual-star-search'
-
-Plug 'altercation/vim-colors-solarized'
-Plug 'nanotech/jellybeans.vim'
-
-" Add plugins to &runtimepath
-call plug#end()
