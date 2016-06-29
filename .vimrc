@@ -4,7 +4,8 @@
 "       https://shoaloak.tk/
 " 
 " Version:
-"       1.0 - 2016-05-11 22:46
+"       1.1 - 2016-06-29 22:53
+"
 "
 " Index:
 "       -> General
@@ -14,6 +15,7 @@
 "       -> status line and ex
 "       -> Miscellaneous
 "       -> Mappings
+"       -> Plugins
 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -170,3 +172,23 @@ runtime macros/matchit.vim
 " fix the :&
 nnoremap & :&&<CR>
 xnoremap & :&&<CR>
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Plugins
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" vim-plug section
+call plug#begin('~/.vim/plugged')
+
+" Make sure you use single quotes
+
+Plug 'scrooloose/nerdtree'
+Plug 'bling/vim-airline'
+Plug 'tpope/vim-surround'
+Plug 'nelstrom/vim-visual-star-search'
+
+Plug 'altercation/vim-colors-solarized'
+Plug 'nanotech/jellybeans.vim'
+
+" Add plugins to &runtimepath
+call plug#end()
