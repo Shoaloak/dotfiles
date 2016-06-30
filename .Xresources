@@ -3,7 +3,7 @@
 !#include "disable-perl.xresource"
 
 URxvt.transparent:          false
-!URxvt.shading:              25
+URxvt.shading:              10
 URxvt.scrollBar:            false
 
 ! Scroll in relation to buffer (with mouse scroll of Shift+Page up)
@@ -12,6 +12,8 @@ URxvt.scrollWithBuffer:     true
 URxvt.secondaryScreen:      1
 URxvt.secondaryScroll:      0
 
+URxvt.geometry:             90x40
+
 !URxvt*font:                 xft:Inconsolata:size=10
-URxvt*font:               xft:DejaVu Sans Mono:size=10
+URxvt*font:               xft:DejaVu Sans Mono:size=8
 Xft*dpi:                    96

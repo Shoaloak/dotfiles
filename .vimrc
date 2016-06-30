@@ -69,7 +69,7 @@ set number
 " highlight columns > 80
 let &colorcolumn=join(range(81,999),",")
 
-"set background=dark "(dark | light)"
+set background=dark "(dark | light)"
 colorscheme solarized
 "colorscheme desert
 
