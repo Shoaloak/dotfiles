@@ -70,8 +70,8 @@ set number
 let &colorcolumn=join(range(81,999),",")
 
 set background=dark "(dark | light)"
-colorscheme solarized
-"colorscheme desert
+"colorscheme solarized
+colorscheme elflord
 
 " No intro
 set shortmess=I
@@ -80,7 +80,7 @@ set shortmess=I
 set noerrorbells
 
 " No error flashes 
-set novisualbell
+set visualbell t_vb=
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
