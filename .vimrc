@@ -67,11 +67,14 @@ syntax enable
 set number
 
 " highlight columns > 80
-let &colorcolumn=join(range(81,999),",")
+"let &colorcolumn=join(range(81,999),",")
 
-set background=dark "(dark | light)"
-"colorscheme solarized
 colorscheme elflord
+if has('gui_running')
+    set background=dark "(dark | light)"
+    colorscheme solarized
+    set guifont=Inconsolata\ 13
+endif
 
 " No intro
 set shortmess=I
@@ -101,6 +104,12 @@ set shiftwidth=4
 " Make auto completion disregard case (depends on ignorecase)
 set infercase
 
+" tab of 8 for asm
+autocmd FileType nasm setlocal shiftwidth=8 tabstop=8 softtabstop=8
+
+" tab of 2 for HTML & CSS
+autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType css setlocal shiftwidth=2 tabstop=2 softtabstop=2
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files and backup
